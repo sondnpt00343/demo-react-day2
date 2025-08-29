@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Vite + React</title>
+    </head>
+    <body>
+        <div id="root"></div>
+        <script type="module" src="/src/main.jsx"></script>
+
+        <!-- <a class="link" href="/">Home</a>
+        <a class="link" href="/news">News</a>
+        <a class="link" href="/contact">Contact</a>
+
+        <script>
+            const root = document.querySelector("#root");
+            const links = [...document.querySelectorAll(".link")];
+
+            const renderPage = (pathname) => {
+                switch (pathname) {
+                    case "/":
+                        root.innerHTML = "Home page";
+                        break;
+                    case "/news":
+                        root.innerHTML = "News page";
+                        break;
+                    case "/contact":
+                        root.innerHTML = "Contact page";
+                        break;
+                }
+            };
+
+            renderPage(location.pathname);
+
+            const handleRoute = (e, link) => {
+                e.preventDefault();
+
+                const pathname = link.getAttribute("href");
+                history.pushState(null, null, pathname);
+
+                renderPage(pathname);
+            };
+
+            links.forEach((link) => {
+                link.addEventListener("click", (e) => handleRoute(e, link));
+            });
+        </script> -->
+    </body>
+</html>
