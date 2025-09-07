@@ -1,0 +1,15 @@
+.wrapper {
+    ul {
+        display: flex;
+        margin: 20px 0;
+    }
+
+    li {
+        padding: 0 20px;
+    }
+}
+
+.active {
+    color: red;
+    font-weight: 600;
+}

@@ -14,11 +14,15 @@ const navItems = [
         to: "/contact",
         title: "Contact",
     },
+    {
+        to: "/use-state",
+        title: "UseState",
+    },
 ];
 
 function Navigation() {
     return (
-        <nav>
+        <nav className={styles.wrapper}>
             <ul>
                 {navItems.map((item, index) => (
                     <li key={index}>
