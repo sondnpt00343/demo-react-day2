@@ -1,0 +1,36 @@
+.modal,
+.overlay {
+    position: fixed;
+    inset: 0;
+}
+
+.modal {
+    z-index: 99999;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay {
+    background: rgba($color: #000000, $alpha: 0.6);
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    border-radius: 6px;
+    background: #fff;
+}
+
+.closeBtn {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: none;
+}

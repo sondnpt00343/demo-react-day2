@@ -16,6 +16,8 @@ import PostDetail from "../../pages/PostDetail";
 
 // Components
 import ScrollToTop from "../../components/ScrollToTop";
+import Cleanup from "../../pages/Cleanup";
+import Cleanup2 from "../../pages/Cleanup2";
 
 function AppRoutes() {
     return (
@@ -29,10 +31,10 @@ function AppRoutes() {
 
                 {/* Default layout pages */}
                 <Route element={<DefaultLayout />}>
-                    <Route index element={<Home />} />
                     <Route path="news" element={<News />} />
                     <Route path="news/:id" element={<PostDetail />} />
                     <Route path="contact" element={<Contact />} />
+                    <Route path="cleanup" element={<Cleanup />} />
                 </Route>
 
                 {/* Sidebar layout pages */}
@@ -41,7 +43,9 @@ function AppRoutes() {
                 </Route>
 
                 {/* No layout */}
+                <Route index element={<Home />} />
                 <Route path="use-state" element={<UseState />} />
+                <Route path="cleanup2" element={<Cleanup2 />} />
             </Routes>
         </Router>
     );
