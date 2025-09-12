@@ -1,23 +1,27 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router";
 
 // Pages
-import Home from "../../pages/Home";
-import News from "../../pages/News";
-import Contact from "../../pages/Contact";
-import Dashboard from "../../pages/Dashboard";
-import NewsTrashed from "../../pages/NewsTrashed";
-import UseState from "../../pages/UseState";
+import Home from "@/pages/Home";
+import News from "@/pages/News";
+import Contact from "@/pages/Contact";
+import Dashboard from "@/pages/Dashboard";
+import NewsTrashed from "@/pages/NewsTrashed";
+import UseState from "@/pages/UseState";
 
 // Layouts
-import DefaultLayout from "../../layouts/DefaultLayout";
-import SidebarLayout from "../../layouts/SidebarLayout";
-import AdminLayout from "../../layouts/AdminLayout";
-import PostDetail from "../../pages/PostDetail";
+import DefaultLayout from "@/layouts/DefaultLayout";
+import SidebarLayout from "@/layouts/SidebarLayout";
+import AdminLayout from "@/layouts/AdminLayout";
+import PostDetail from "@/pages/PostDetail";
 
 // Components
-import ScrollToTop from "../../components/ScrollToTop";
-import Cleanup from "../../pages/Cleanup";
-import Cleanup2 from "../../pages/Cleanup2";
+import ScrollToTop from "@/components/ScrollToTop";
+import Cleanup from "@/pages/Cleanup";
+import Cleanup2 from "@/pages/Cleanup2";
+import Hooks from "@/pages/Hooks";
+import HOC from "@/pages/HOC";
+import RenderProps from "@/pages/RenderProps";
+import CustomHook from "@/pages/CustomHook";
 
 function AppRoutes() {
     return (
@@ -46,6 +50,10 @@ function AppRoutes() {
                 <Route index element={<Home />} />
                 <Route path="use-state" element={<UseState />} />
                 <Route path="cleanup2" element={<Cleanup2 />} />
+                <Route path="hooks" element={<Hooks />} />
+                <Route path="hoc" element={<HOC />} />
+                <Route path="render-props" element={<RenderProps />} />
+                <Route path="custom-hook" element={<CustomHook />} />
             </Routes>
         </Router>
     );
