@@ -16,7 +16,9 @@ function A() {
 }
 
 function B() {
-    console.log("B render");
+    const { currentUser } = useContext(ThemeContext);
+    console.log("B render", currentUser);
+
     return <C />;
 }
 
@@ -46,3 +48,6 @@ function ContextAPI() {
 }
 
 export default ContextAPI;
+
+// redux: Quy trình quản lý state
+// react-redux: Cầu nối giữa React & Redux

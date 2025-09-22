@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 
 function Cleanup() {
+    // Local state
     const [counter, setCounter] = useState(0);
 
     useEffect(() => {

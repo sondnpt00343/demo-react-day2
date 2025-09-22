@@ -26,6 +26,7 @@ import Debounce from "@/pages/Debounce";
 import TabsDemo from "@/pages/TabsDemo";
 import Forms from "@/pages/Forms";
 import ContextAPI from "@/pages/ContextAPI";
+import Redux from "@/pages/Redux";
 
 function AppRoutes() {
     return (
@@ -62,6 +63,7 @@ function AppRoutes() {
                 <Route path="tabs-demo" element={<TabsDemo />} />
                 <Route path="forms" element={<Forms />} />
                 <Route path="context-api" element={<ContextAPI />} />
+                <Route path="redux" element={<Redux />} />
             </Routes>
         </Router>
     );
