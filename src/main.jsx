@@ -1,7 +1,7 @@
 // import React from "react";
 import ReactDOM from "react-dom/client";
 
-import { Provider as ReduxProvider } from "@/contexts/ReduxContext";
+import { Provider as ReduxProvider } from "react-redux";
 import { Provider as ThemeProvider } from "@/contexts/ThemeContext";
 import store from "@/store/store";
 import App from "./App";

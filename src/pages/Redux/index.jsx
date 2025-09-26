@@ -1,4 +1,4 @@
-import { useDispatch, useSelector } from "@/libs/react-redux";
+import { useDispatch, useSelector } from "react-redux";
 
 const styles = {
     wrapper: { margin: 20 },

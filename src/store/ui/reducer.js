@@ -1,24 +1,24 @@
-// Global state
+import { HIDE_LOADING, SHOW_LOADING } from "./constants";
+
 const initState = {
-    counter: 0,
-    theme: "light",
+    loading: false,
 };
 
-function reducer(state = initState, action) {
+const reducer = (state = initState, action) => {
     switch (action.type) {
-        case "increase":
+        case SHOW_LOADING:
             return {
                 ...state,
-                counter: state.counter + 1,
+                loading: true,
             };
-        case "setTheme":
+        case HIDE_LOADING:
             return {
                 ...state,
-                theme: action.payload,
+                loading: false,
             };
         default:
             return state;
     }
-}
+};
 
 export default reducer;

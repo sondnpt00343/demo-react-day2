@@ -16,6 +16,7 @@ import PostDetail from "@/pages/PostDetail";
 
 // Components
 import ScrollToTop from "@/components/ScrollToTop";
+import Loading from "@/components/Loading";
 import Cleanup from "@/pages/Cleanup";
 import Cleanup2 from "@/pages/Cleanup2";
 import Hooks from "@/pages/Hooks";
@@ -27,11 +28,13 @@ import TabsDemo from "@/pages/TabsDemo";
 import Forms from "@/pages/Forms";
 import ContextAPI from "@/pages/ContextAPI";
 import Redux from "@/pages/Redux";
+import Example2 from "@/pages/Redux/Example2";
 
 function AppRoutes() {
     return (
         <Router>
             <ScrollToTop />
+            <Loading />
 
             <Routes>
                 <Route path="/admin" element={<AdminLayout />}>
@@ -64,6 +67,7 @@ function AppRoutes() {
                 <Route path="forms" element={<Forms />} />
                 <Route path="context-api" element={<ContextAPI />} />
                 <Route path="redux" element={<Redux />} />
+                <Route path="redux/example2" element={<Example2 />} />
             </Routes>
         </Router>
     );

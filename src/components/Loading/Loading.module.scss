@@ -1,0 +1,25 @@
+.wrapper {
+    position: fixed;
+    inset: 0;
+    z-index: 99999;
+    background: rgba($color: #000000, $alpha: 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &::before {
+        content: "";
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: 5px solid;
+        border-color: rgb(40, 207, 240) transparent;
+        animation: spinner 1s ease infinite;
+    }
+}
+
+@keyframes spinner {
+    to {
+        rotate: 360deg;
+    }
+}
